@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="Alejandro's Portfolio" name="description">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Mi Portafolio</title>
+    <link href="styles.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald&display=swap" rel="stylesheet"/>
+  </head>
+
+  <body>
+    <a href="#main" class="skip-link">Saltar al contenido principal</a>
+    <header>
+      <img src="https://images2.alphacoders.com/120/1202668.jpg" alt="Rek sai image" class="header-img">
+      <h1 class="header">Alejandro Vanegas Rondon</h1>
+      <h2 class="subtitle">Indeciso-end</h2>
+      <nav>
+        <ul class="navigation">
+          <li class="nav-item"><a href="#">Acerca de</a></li>
+          <li class="nav-item"><a href="#">Mis Proyectos</a></li>
+          <li class="nav-item"><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+
+    <main id="main">
+      <section>
+        <h2 class="header">Acerca de mi</h2>
+        <p class="intro">
+          Hola soy Alejandro Vanegas, soy un completo loco de las tecnologias lo que ha convertido en lo
+          que se llama de mala manera "El eterno estudiante", que para mi no es malo, ya que me ha brindado 
+          la oportunidad de conocer multiples entornos en los que he podido ser yo mismo y relacionarme con
+          otros locos iguales, me gusta el Front-end, Back-end, data analysis, entre muchas otra cosas, utilizo
+          lenguajes de programacion como python, java, javascript, lo cual me ha vuelto muy flexible a la hora
+          de trabajar en equipo y aceptar el cambio como un estilo de vida. 
+        </p>
+        <ul class="social-media">
+          <li>
+            <a href="https://twitter.com/gmzjuliana" target="_blank">
+              <img src="images/twitter.png" alt="Twitter logo"/>
+              <p class="social-media-link">Twitter</p>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/gmzjuliana" target="_blank">
+              <img src="images/github-logo.png" alt="Github logo"/>
+              <p class="social-media-link">Github</p>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/gomezjuliana/" target="_blank">
+              <img src="images/linkedin.png" alt="Linkedin logo"/>
+              <p class="social-media-link">Linkedin</p>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2 class="header">Mis Proyectos</h2>
+        <div class="carousel">
+          <button class="arrow arrow-left" aria-label="backward button"></button>
+          <div class="window">
+            <ul class="project-container">
+              <li class="project1-container"><button class="project1 project"><img src="images/project1.png" alt="Primero proyecto" class="project-img ">></button></li>
+              <li class="project-img2-container"><button class="project2 project"><img src="images/project2.png" alt="Segundo proyecto" class="project-img ">></button></li>
+              <li class="project3-co-imgntainer"><button class="project3 project"><img src="images/project3.png" alt="Tercer proyecto" class="project-img ">></button></li>
+              <li class="project4-c-imgontainer" aria-hidden="true"><button class="project4 project" tabindex="-1"><img src="images/project4.png" alt="Cuarto proyecto" class="project-img ">></button></li>
+              <li class="project5-container" aria-hidden="true"><button class="project5 project" tabindex="-1"><img src="images/project5.png" alt="Quinto proyecto" class="project-img ">></button></li>
+            </ul>
+          </div>
+          <button class="arrow arrow-right" aria-label="forward button"></button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="contact-section">
+      <h2 class="header">Contacto</h2>
+      <p class="intro">Este formulario sirve para contactarme</p>
+      <form class="form-container">
+        <label class="form-label" for="name">Nombre</label>
+        <input id="name" type="text" aria-label="name input"/>
+        <span id="name-error" aria-live="assertive"></span> <br />
+        <label class="form-label" for="email">Correo</label>
+        <input id="email" type="email" aria-label="email input"/> 
+        <span class="input-error"></span> <br />
+        <label class="form-label" for="textarea">Mensaje</label>
+        <textarea name="" id="textarea" cols="30" rows="10"></textarea>
+        <input type="submit" class="send-button" value="Enviar">
+      </form>
+    </footer>
+
+    <div class="notification" aria-live="assertive"></div>
+    <div class="modal-container">
+      <div class="modal">
+        <h2 id="modal-header" class="header" tabindex="0">Ejemplo</h2>
+        <img src="images/project1.png" class="modal-project-image"></img>
+        <button class="modal-button">Cerrar</button>
+      </div>
+    </div>
+
+    <script src="index.js" type="text/javascript"></script>
+  </body>
+</html>
